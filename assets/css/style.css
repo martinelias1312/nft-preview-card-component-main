@@ -41,6 +41,7 @@ body {
 /* Text styling */
 .main-heading {
     margin: 0;
+    font-size: 1.7em;
 }
 
 .main-heading, .name {
