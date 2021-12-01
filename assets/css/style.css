@@ -1,6 +1,7 @@
 :root {    
     --Soft-blue: hsl(215, 51%, 70%);
     --Cyan: hsl(178, 100%, 50%);
+    --Cyan-hover: hsl(178, 100%, 50%, 50%);
 
     --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
     --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
@@ -109,8 +110,18 @@ figure {
 }
 
 /* Hover states */
-.img-equil:hover, .img-equil:focus {
-    background: var(--Cyan) ,url(/assets/img/icon-view.svg) center no-repeat;
+.img-equil::before {
+    opacity: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    border-radius: 4%;
+    transition: 0.5s;    
+    background: var(--Cyan-hover) url(/assets/img/icon-view.svg) center no-repeat; 
+}
+
+.img-equil:hover::before {
+    opacity: 1;
 }
 
 .main-heading:hover, .main-heading:focus {
