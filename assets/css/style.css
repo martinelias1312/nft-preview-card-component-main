@@ -12,6 +12,21 @@
     --Font-Family: 'Outfit', sans-serif;
 }
 
+/* Hover states */
+.img-equil:hover, .img-equil:focus {
+    background: var(--Cyan);
+    opacity: 0.7;
+}
+
+.main-heading:hover, .main-heading:focus {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.name:hover, .name:focus {
+    color: var(--Cyan);
+}
+
 /* -- Footer signature -- */
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
