@@ -7,15 +7,110 @@
     --Very-dark-blue-line: hsl(215, 32%, 27%);
     --White: hsl(0, 0%, 100%);
 
-    --Font-size-paragraph: 18px;
+    --Font-size-paragraph: 1.125em; /* 18px */
 
     --Font-Family: 'Outfit', sans-serif;
 }
 
+body {
+    font-family: var(--Font-Family);
+    background: var(--Very-dark-blue-main-BG);
+    line-height: 1.5;
+}
+
+/* -- Card -- */ 
+.card {
+    background: var(--Very-dark-blue-card-BG);
+    border-radius: 4%;
+    margin: 3em auto;
+    padding: 1.5em;
+    max-width: 18.75em;
+}
+
+/* Image equilibrium */
+.img-equil {
+    background: url(/assets/img/image-equilibrium.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 4%;
+    display: inline-block;
+    width: 100%;
+    height: 18.75em;
+}
+
+/* Text styling */
+.main-heading {
+    margin: 0;
+}
+
+.main-heading, .name {
+    color: var(--White);
+}
+
+.name {
+    text-decoration: none;
+}
+
+.main-p {
+    font-size: var(--Font-size-paragraph);
+    margin-top: 0.5em;
+}
+
+p {
+    font-weight: 300;
+}
+
+p, .time {
+    color: var(--Soft-blue);
+}
+
+.ethereum {
+    color: var(--Cyan);
+    font-weight: 600;
+}
+
+.ethereum, .time {
+    display: flex;
+    align-items: center;
+}
+
+.eth-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img-eth, .img-clock {
+    margin-right: 0.4em;
+}
+
+hr {
+    color: var(--Very-dark-blue-line);
+    margin-top: 0.6em;
+}
+
+/* Avatar + signature */
+figure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+.img-profile {
+    border-radius: 50%;
+    border: 1px solid var(--White);
+    max-height: 2.5em;
+}
+
+.caption {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1em;
+}
+
 /* Hover states */
 .img-equil:hover, .img-equil:focus {
-    background: var(--Cyan);
-    opacity: 0.7;
+    background: var(--Cyan) ,url(/assets/img/icon-view.svg) center no-repeat;
 }
 
 .main-heading:hover, .main-heading:focus {
@@ -28,5 +123,5 @@
 }
 
 /* -- Footer signature -- */
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; color: var(--White);}
 .attribution a { color: hsl(228, 45%, 44%); }
